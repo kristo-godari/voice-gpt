@@ -4,7 +4,7 @@ import configparser
 class AssistantConfig:
     def __init__(self):
         self.config = configparser.ConfigParser()
-        self.config.read("config/deutsch-learning/deutsch-grammar.properties")
+        self.config.read("config/general-questions.properties")
         self.get_text_to_speech_output_file_name = "tmp-output/text-to-speech-output.wav"
         self.get_record_audio_file_name = "tmp-output/recording-output.wav"
 

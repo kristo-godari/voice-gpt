@@ -4,31 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-assistant.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assistant_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assistant_ui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio_player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio_recorder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/deutsch-learning/deutsch-grammar.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/deutsch-learning/deutsch-role-play-conversation.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/deutsch-learning/deutsch-understanding.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/deutsch-learning/deutsch-vocabulary.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/deutsch-learning/deutsch-writing.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/general-questions.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/role-play-conversation.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/conversation_engine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/personal_assistant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/speach_to_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/text_to_speach.py" afterDir="false" />
+    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="Create project structure, add functionality.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assistant_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/assistant_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personal_assistant.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/personal_assistant.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +186,14 @@
       <option name="presentableId" value="Default" />
       <updated>1688145467075</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create project structure, add functionality.">
+      <created>1688743517509</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688743517509</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +206,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create project structure, add functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create project structure, add functionality." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

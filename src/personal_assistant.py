@@ -1,4 +1,5 @@
 import wx
+import threading
 
 import assistant_ui
 from src.assistant_config import AssistantConfig
@@ -25,20 +26,21 @@ class EventHandler:
     def handle_event(self, event):
         if event == self.RECORDING_STARTED:
             print("RECORDING_STARTED")
-            self.audio_recorder.startRecording()
+            recording_thread = threading.Thread(target=self.audio_recorder.startRecording)
+            recording_thread.start()
 
         elif event == self.RECORDING_STOPPED:
             print("RECORDING_STOPPED")
             self.audio_recorder.stopRecording()
 
             text = self.speech_to_text_converter.speech_to_text()
-            frame.appendMessage(text, "Human")
+            wx.CallAfter(frame.appendMessage, text, "Human")
             self.PROMPT = self.PROMPT + text + "\n AI: "
 
             response = self.conversation_engine.chat(self.PROMPT)
             self.PROMPT = self.PROMPT + response + "\n Human: "
 
-            frame.appendMessage(response, "AI")
+            wx.CallAfter(frame.appendMessage, response, "AI")
 
             text_to_speech_converter.text_to_speech(response)
             audio_player.play_audio()
@@ -46,6 +48,19 @@ class EventHandler:
         else:
             print("OTHER")
         pass
+
+
+def initialize():
+    # Get initial response
+    initial_response = conversation_engine.chat(config.get_initial_prompt())
+    # Update prompt, conversation engine needs the whole context every time
+    event_handler.PROMPT = config.get_initial_prompt() + initial_response + "\n Human: "
+    # Show it in UI
+    wx.CallAfter(frame.appendMessage, initial_response, "AI")
+    # Convert it to audio and store it locally
+    text_to_speech_converter.text_to_speech(initial_response)
+    # Play the audio
+    wx.CallAfter(audio_player.play_audio)
 
 
 if __name__ == "__main__":
@@ -63,18 +78,10 @@ if __name__ == "__main__":
 
     # create frame
     frame.event_handler = event_handler
-    frame.Show()
 
-    # get initial response
-    initial_response = conversation_engine.chat(config.get_initial_prompt())
-    # update prompt, conversation engine needs the whole context every time
-    event_handler.PROMPT = config.get_initial_prompt() + initial_response + "\n Human: "
-    # show it in ui
-    frame.appendMessage(initial_response, "AI")
-    # convert it to audio and store it locally
-    text_to_speech_converter.text_to_speech(initial_response)
-    # play the audio
-    audio_player.play_audio()
+    wx.CallAfter(initialize)
+
+    frame.Show()
 
     # start app
     app.MainLoop()
