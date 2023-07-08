@@ -22,6 +22,7 @@ numba==0.57.1
 numpy==1.24.4
 openai==0.27.8
 openai-whisper==20230314
+Pillow==10.0.0
 PyAudio==0.2.13
 regex==2023.6.3
 requests==2.31.0
@@ -31,8 +32,6 @@ tiktoken==0.3.1
 torch==2.0.1
 tqdm==4.65.0
 typing_extensions==4.7.0
-urllib3==2.0.3
-whisper==1.1.10
+urllib3==1.26.16
+wxPython==4.2.1
 yarl==1.9.2
-
-wxPython~=4.2.1
