@@ -14,6 +14,7 @@ class AudioRecorder:
         self.audio = pyaudio.PyAudio()
         self.stream = None
         self.frames = []
+        self.stop_recording = False
 
     def startRecording(self):
         self.stream = self.audio.open(format=self.FORMAT, channels=self.CHANNELS,
@@ -22,11 +23,13 @@ class AudioRecorder:
         self.frames = []
         print("Microphone open. Recording started...")
 
-        while self.stream.is_active():
+        while not self.stop_recording:
             data = self.stream.read(self.CHUNK)
             self.frames.append(data)
 
     def stopRecording(self):
+
+        self.stop_recording = True
         if self.stream is None:
             print("No active recording.")
             return
@@ -43,3 +46,4 @@ class AudioRecorder:
         wave_file.close()
 
         self.stream = None
+        self.stop_recording = False

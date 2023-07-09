@@ -1,3 +1,4 @@
+import os
 import wx
 
 
@@ -6,7 +7,8 @@ class FlowOrchestrator:
     RECORDING_STOPPED = "RECORDING_STOPPED"
     PROMPT = ""
 
-    def __init__(self, audio_player, text_to_speech_converter, speech_to_text_converter, conversation_engine, ui, config):
+    def __init__(self, audio_player, text_to_speech_converter, speech_to_text_converter, conversation_engine, ui,
+                 config):
         self.audio_player = audio_player
         self.text_to_speech_converter = text_to_speech_converter
         self.speech_to_text_converter = speech_to_text_converter
@@ -15,7 +17,6 @@ class FlowOrchestrator:
         self.config = config
 
     def initialize(self):
-
         # Get initial response
         initial_response = self.conversation_engine.chat(self.config.get_initial_prompt())
 
@@ -30,11 +31,13 @@ class FlowOrchestrator:
 
         # Play the audio
         self.audio_player.play_audio()
+        self._deleteFile(self.config.get_text_to_speech_output_file())
 
     def continue_conversation(self):
-
         # convert speech to text
         text = self.speech_to_text_converter.speech_to_text()
+        self._deleteFile(self.config.get_record_audio_output_file())
+
         wx.CallAfter(self.ui.appendMessage, text, "Human")
 
         # update prompt with new text
@@ -52,3 +55,11 @@ class FlowOrchestrator:
 
         # play audio
         self.audio_player.play_audio()
+        self._deleteFile(self.config.get_text_to_speech_output_file())
+
+    def _deleteFile(self, file_path):
+        if os.path.exists(file_path):
+            os.remove(file_path)
+            print("File deleted successfully.")
+        else:
+            print("File not found.")
