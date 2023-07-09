@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="Add new requirements.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="Changed the text to speach from GTTS to TTS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assistant_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/assistant_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio_player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio_recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio_recorder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/flow_orchestrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/flow_orchestrator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/speach_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/speach_to_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/text_to_speach.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_to_speach.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688850489618</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed the text to speach from GTTS to TTS">
+      <created>1688906398370</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688906398370</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +224,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project structure, add functionality." />
     <MESSAGE value="Add new requirements." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new requirements." />
+    <MESSAGE value="Changed the text to speach from GTTS to TTS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the text to speach from GTTS to TTS" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
