@@ -12,13 +12,11 @@ class UiEventHandler:
 
     def handle_event(self, event):
         if event == self.RECORDING_STARTED:
-            recording_thread = threading.Thread(target=self.audio_recorder.startRecording)
-            recording_thread.start()
+            threading.Thread(target=self.audio_recorder.startRecording).start()
 
         elif event == self.RECORDING_STOPPED:
             self.audio_recorder.stopRecording()
-            recording_thread = threading.Thread(target=self.flow_orchestrator.continue_conversation)
-            recording_thread.start()
+            threading.Thread(target=self.flow_orchestrator.continue_conversation).start()
         else:
             print("OTHER")
         pass

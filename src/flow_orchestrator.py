@@ -36,7 +36,6 @@ class FlowOrchestrator:
     def continue_conversation(self):
         # convert speech to text
         text = self.speech_to_text_converter.speech_to_text()
-        self._deleteFile(self.config.get_record_audio_output_file())
 
         wx.CallAfter(self.ui.appendMessage, text, "Human")
 

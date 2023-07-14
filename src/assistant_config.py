@@ -18,9 +18,7 @@ class AssistantConfig:
         return self.config.get("text", "openai-api-key")
 
     def get_text_to_speech_output_file(self):
-        print(f"get_text_to_speech_output_file")
         return self.get_text_to_speech_output_file_name
 
     def get_record_audio_output_file(self):
-        print(f"get_record_audio_output_file")
         return self.get_record_audio_file_name

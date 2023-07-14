@@ -1,7 +1,7 @@
 import wx
 import threading
-
 import assistant_ui
+
 from src.assistant_config import AssistantConfig
 from src.audio_player import AudioPlayer
 from src.audio_recorder import AudioRecorder

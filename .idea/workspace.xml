@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="Changed the text to speach from GTTS to TTS">
+    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="Added more models.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assistant_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/assistant_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assistant_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/assistant_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio_player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio_recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio_recorder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conversation_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/conversation_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flow_orchestrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/flow_orchestrator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/speach_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/speach_to_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/text_to_speach.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_to_speach.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_event_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_event_handler.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +48,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/kristo.godari/godari-workspace/workspace/personal-assistant",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kristo.godari/godari-workspace/workspace/personal-assistant&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config/deutch-learning" />
@@ -75,27 +84,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/assistant_ui.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="luncher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="personal-assistant" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/luncher.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,13 +155,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="personal-assistant" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.personal_assistant" />
         <item itemvalue="Python.assistant_ui" />
         <item itemvalue="Python.personal_assistant_2" />
-        <item itemvalue="Python.luncher" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688906398370</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added more models.">
+      <created>1688918902160</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688918902160</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +241,8 @@
     <MESSAGE value="Create project structure, add functionality." />
     <MESSAGE value="Add new requirements." />
     <MESSAGE value="Changed the text to speach from GTTS to TTS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the text to speach from GTTS to TTS" />
+    <MESSAGE value="Added more models." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more models." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

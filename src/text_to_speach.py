@@ -2,7 +2,6 @@ from TTS.api import TTS
 
 
 class TextToSpeechConverter:
-
     def __init__(self, config):
         self.config = config
         self.model_name = "tts_models/multilingual/multi-dataset/your_tts" if self.config.get_text_to_speech_lang() == "en" else "tts_models/de/thorsten/tacotron2-DDC"

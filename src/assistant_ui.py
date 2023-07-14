@@ -56,3 +56,7 @@ class ChatUi(wx.Frame):
         else:
             new_text = formatted_message
         self.text_box.SetValue(new_text)
+
+        # Scroll to the bottom of the text box
+        self.text_box.SetInsertionPointEnd()
+        self.text_box.ShowPosition(self.text_box.GetLastPosition())
