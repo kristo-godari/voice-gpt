@@ -15,8 +15,8 @@ class UiEventHandler:
             threading.Thread(target=self.audio_recorder.startRecording).start()
 
         elif event == self.RECORDING_STOPPED:
-            self.audio_recorder.stopRecording()
-            threading.Thread(target=self.flow_orchestrator.continue_conversation).start()
+            recording_bytes = self.audio_recorder.stopRecording()
+            threading.Thread(target=self.flow_orchestrator.continue_conversation,  args=(recording_bytes,)).start()
         else:
             print("OTHER")
         pass

@@ -1,4 +1,3 @@
-import os
 import wx
 
 
@@ -27,15 +26,14 @@ class FlowOrchestrator:
         wx.CallAfter(self.ui.appendMessage, initial_response, "AI")
 
         # Convert it to audio and store it locally
-        self.text_to_speech_converter.text_to_speech(initial_response)
+        audio_bytes = self.text_to_speech_converter.text_to_speech(initial_response)
 
         # Play the audio
-        self.audio_player.play_audio()
-        self._deleteFile(self.config.get_text_to_speech_output_file())
+        self.audio_player.play_audio(audio_bytes)
 
-    def continue_conversation(self):
+    def continue_conversation(self, recording_bytes):
         # convert speech to text
-        text = self.speech_to_text_converter.speech_to_text()
+        text = self.speech_to_text_converter.speech_to_text(recording_bytes)
 
         wx.CallAfter(self.ui.appendMessage, text, "Human")
 
@@ -50,15 +48,7 @@ class FlowOrchestrator:
         wx.CallAfter(self.ui.appendMessage, response, "AI")
 
         # convert response to audio
-        self.text_to_speech_converter.text_to_speech(response)
+        audio_bytes = self.text_to_speech_converter.text_to_speech(response)
 
         # play audio
-        self.audio_player.play_audio()
-        self._deleteFile(self.config.get_text_to_speech_output_file())
-
-    def _deleteFile(self, file_path):
-        if os.path.exists(file_path):
-            os.remove(file_path)
-            print("File deleted successfully.")
-        else:
-            print("File not found.")
+        self.audio_player.play_audio(audio_bytes)

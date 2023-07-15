@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="Added more models.">
+    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="Remove unused logining. Added useful logging. Refactored. Add scroll to bottom on ui. Add thread safety.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assistant_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/assistant_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assistant_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/assistant_ui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/audio_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio_player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/audio_recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio_recorder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/conversation_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/conversation_engine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/flow_orchestrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/flow_orchestrator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/speach_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/speach_to_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/text_to_speach.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_to_speach.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui_event_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_event_handler.py" afterDir="false" />
@@ -223,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688918902160</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Remove unused logining. Added useful logging. Refactored. Add scroll to bottom on ui. Add thread safety.">
+      <created>1689369894512</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689369894512</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +246,29 @@
     <MESSAGE value="Add new requirements." />
     <MESSAGE value="Changed the text to speach from GTTS to TTS" />
     <MESSAGE value="Added more models." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more models." />
+    <MESSAGE value="Remove unused logining. Added useful logging. Refactored. Add scroll to bottom on ui. Add thread safety." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused logining. Added useful logging. Refactored. Add scroll to bottom on ui. Add thread safety." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/speach_to_text.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/speach_to_text.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/speach_to_text.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
