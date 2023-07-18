@@ -1,3 +1,5 @@
+import io
+import wave
 import pyaudio
 from retry import retry
 import threading
@@ -40,11 +42,22 @@ class AudioRecorder:
         self.stop_recording.clear()
         print("Recording finished.")
 
-        # wave_file = wave.open(self.config.get_record_audio_output_file(), 'wb')
-        # wave_file.setnchannels(self.CHANNELS)
-        # wave_file.setsampwidth(self.audio.get_sample_size(self.FORMAT))
-        # wave_file.setframerate(self.RATE)
-        # wave_file.writeframes(b''.join(self.frames))
-        # wave_file.close()
+        # Create a BytesIO object to store audio data in memory
+        audio_file = io.BytesIO()
 
-        return self.frames
+        # Create a wave file writer with the same format as the input audio
+        with wave.open(audio_file, 'wb') as wf:
+            wf.setnchannels(self.CHANNELS)
+            wf.setsampwidth(self.audio.get_sample_size(self.FORMAT))
+            wf.setframerate(self.RATE)
+
+            # Write the audio frames to the wave file
+            wf.writeframes(b''.join(self.frames))
+
+        # Get the file bytes from the BytesIO object
+        audio_bytes = audio_file.getvalue()
+
+        # with open("tmp-output/output.wav", "wb") as f:
+        #     f.write(audio_bytes)
+
+        return audio_bytes

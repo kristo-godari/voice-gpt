@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="Remove unused logining. Added useful logging. Refactored. Add scroll to bottom on ui. Add thread safety.">
+    <list default="true" id="152e68e8-860f-4c6f-9a39-45a4a7634a61" name="Changes" comment="Temporary commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio_player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/audio_recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio_recorder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/conversation_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/conversation_engine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/flow_orchestrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/flow_orchestrator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/speach_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/speach_to_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/text_to_speach.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_to_speach.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_event_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_event_handler.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689369894512</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Temporary commit">
+      <created>1689447060021</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689447060021</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,25 +249,16 @@
     <MESSAGE value="Changed the text to speach from GTTS to TTS" />
     <MESSAGE value="Added more models." />
     <MESSAGE value="Remove unused logining. Added useful logging. Refactored. Add scroll to bottom on ui. Add thread safety." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unused logining. Added useful logging. Refactored. Add scroll to bottom on ui. Add thread safety." />
+    <MESSAGE value="Temporary commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Temporary commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/speach_to_text.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/speach_to_text.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/speach_to_text.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$USER_HOME$/Library/Python/3.9/lib/python/site-packages/whisper/transcribe.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
