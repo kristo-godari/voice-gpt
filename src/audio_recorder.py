@@ -57,7 +57,4 @@ class AudioRecorder:
         # Get the file bytes from the BytesIO object
         audio_bytes = audio_file.getvalue()
 
-        # with open("tmp-output/output.wav", "wb") as f:
-        #     f.write(audio_bytes)
-
         return audio_bytes

@@ -14,5 +14,5 @@ class TextToSpeechConverter:
         tts = gTTS(text, lang=self.config.get_text_to_speech_lang())
         tts.write_to_fp(audio_bytes)
         audio_bytes.seek(0)
-
+        print(f"Finished tex to speech process.")
         return audio_bytes

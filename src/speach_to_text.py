@@ -1,5 +1,5 @@
+import tempfile
 import whisper
-import numpy as np
 
 
 class SpeechToTextConverter:
@@ -8,12 +8,14 @@ class SpeechToTextConverter:
         self.config = config
         self.model = whisper.load_model("base")
 
-    def speech_to_text(self, recording_bytes):
+    def speech_to_text(self, recording_bytes: bytes):
         print(f"Started convert speech to text.")
 
-        audio = np.frombuffer(recording_bytes, np.int16).flatten().astype(np.float32) / 32768.0
+        with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp_file:
+            tmp_filename = tmp_file.name
+            tmp_file.write(recording_bytes)
 
-        result = self.model.transcribe(audio, fp16=False)
+        result = self.model.transcribe(tmp_filename, fp16=False)
         print(f"Text result is {result['text']}.")
 
         return result["text"]
