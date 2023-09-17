@@ -1,5 +1,3 @@
-import os
-from retry import retry
 from pydub import AudioSegment
 from pydub.playback import play
 
