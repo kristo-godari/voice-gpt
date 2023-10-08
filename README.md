@@ -84,4 +84,4 @@ Improve the graphical user interface for a more user-friendly experience.
 Contributions to this project are welcome! Feel free to open issues or submit pull requests to help improve the project.
 
 ## License
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENCE) file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
